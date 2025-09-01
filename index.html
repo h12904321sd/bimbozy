@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>bimbozy.exe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Pantalla de contraseña -->
+  <div id="login-screen">
+    <h1 class="glitch" data-text="bimbozy.exe">bimbozy.exe</h1>
+    <p>Ingresa la contraseña para acceder</p>
+    <input type="password" id="password" placeholder="Contraseña">
+    <button onclick="checkPassword()">Entrar</button>
+    <p id="error" style="color:red; margin-top:10px;"></p>
+  </div>
+
+  <!-- Contenido del juego (oculto al inicio) -->
+  <div id="main-content" class="hidden">
+    <header>
+      <h1 class="glitch" data-text="bimbo.exe">bimbo.exe</h1>
+      <p class="subtitle">Beta Game Style - Inspired by Fede Vigevani</p>
+    </header>
+
+    <main>
+      <section class="game-menu">
+        <button onclick="startGame()">▶ Iniciar</button>
+        <button onclick="credits()">ℹ Créditos</button>
+        <button onclick="exit()">✖ Salir</button>
+      </section>
+
+      <section id="game-screen" class="hidden">
+        <h2>Bienvenido al Juego</h2>
+        <canvas id="gameCanvas"></canvas>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2025 bimbo.exe | Fanmade beta game style</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
